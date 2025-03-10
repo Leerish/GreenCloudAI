@@ -75,6 +75,9 @@ input_data = pd.DataFrame({
 
 # Normalize Input Data
 input_data[columns_to_normalize] = scaler.transform(input_data[columns_to_normalize])
+# Ensure input_data has the same columns as X_train
+input_data = input_data.reindex(columns=X_train.columns, fill_value=0)
+
 
 # Make Prediction
 prediction = model.predict(input_data)
