@@ -3,5 +3,4 @@ pandas
 numpy
 scikit-learn
 matplotli
-seaborn
 plotly
