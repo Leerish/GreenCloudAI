@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -49,17 +48,10 @@ model.fit(X_train, y_train)
 # Data Visualization
 st.subheader("📈 Data Insights")
 
-# Feature Correlation Heatmap
-st.write("### 🔥 Feature Correlation Heatmap")
-fig, ax = plt.subplots()
-sns.heatmap(data.corr(), annot=True, cmap='coolwarm', fmt='.2f', ax=ax)
-st.pyplot(fig)
+
 
 # CPU Usage Distribution
-st.write("### 🖥️ CPU Usage Distribution")
-fig, ax = plt.subplots()
-sns.histplot(data['cpu_usage'], bins=30, kde=True, ax=ax)
-st.pyplot(fig)
+
 
 # User Input Section
 st.sidebar.header("🔧 Enter Task Details")
