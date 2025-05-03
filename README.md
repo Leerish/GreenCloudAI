@@ -3,7 +3,9 @@
 # 🌱 Green Cloud AI: Data Pipeline with DVC and MLflow
 
 This project demonstrates how to build an end-to-end reproducible Machine Learning pipeline tailored specifically for **Green Cloud AI**, using **DVC (Data Version Control)** for versioning data and models, and **MLflow** for tracking experiments. The pipeline utilizes a **Random Forest Classifier** trained on a CPU performance metrics dataset sourced from Kaggle, focusing on resource optimization and sustainable cloud computing practices.
+Access the complete project on DagsHub:
 
+🔗 [Green Cloud AI Pipeline Repository](https://dagshub.com/LeerishArvind/Green_Cloud_AI)
 ---
 
 ## 🎯 Project Objectives
